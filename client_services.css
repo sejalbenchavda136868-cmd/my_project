@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f7f4ef;
+    min-height: 100vh
+}
+
+nav {
+    height: 70px;
+    background: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 0 6%;
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+nav b {
+    font-size: 23px;
+    color: #e8c46a;
+    margin-right: auto
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    transition: .3s
+}
+
+nav a:hover,
+nav a.active {
+    color: #e8c46a;
+    transform: translateY(-2px)
+}
+
+main {
+    padding: 55px 7%
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px
+}
+
+h2 {
+    margin: 12px 0
+}
+
+button,
+.btn {
+    background: #c89b3c;
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-3px);
+    background: #a77c26
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+    margin-top: 40px
+}
+
+body {
+    background: linear-gradient(#111827dd, #111827dd), url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
+    color: white
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px
+}
+
+.services article {
+    background: #ffffff12;
+    border: 1px solid #ffffff30;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: .4s
+}
+
+.services article:hover {
+    transform: translateY(-10px);
+    background: #ffffff20
+}
+
+.services span {
+    font-size: 45px
+}
+
+@media(max-width:900px) {
+    .services {
+        grid-template-columns: 1fr 1fr
+    }
+}
